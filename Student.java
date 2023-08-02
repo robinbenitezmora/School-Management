@@ -53,4 +53,57 @@ public class Student {
   School.updateTotalMoneyEarned(feesPaid);
  }
 
+ /**
+  * 
+  * @return id of the student.
+  */
+
+ public int getId() {
+  return id;
+ }
+
+ /**
+  * 
+  * @return name of the student.
+  */
+
+ public String getName() {
+  return name;
+ }
+
+ /**
+  * 
+  * @return the grade of the student.
+  */
+
+ public int getGrade() {
+  return grade;
+ }
+
+ /**
+  * 
+  * @return fees paid by the student.
+  */
+
+ public int getFeesPaid() {
+  return feesPaid;
+ }
+
+ /**
+  * 
+  * @return the total fees of the student.
+  */
+
+ public int getFeesTotal() {
+  return feesTotal;
+ }
+
+ /**
+  * 
+  * @return the remaining fees.
+  */
+
+ public int getRemainingFees() {
+  return feesTotal - feesPaid;
+ }
 }
