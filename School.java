@@ -59,8 +59,9 @@ public class School {
   * @param student the student to be added.
   */
 
- public void addStudent(Student student) {
+ public void addStudents(Student student) {
   students.add(student);
+  System.out.println("Student " + student.getName() + " was added to the school.");
  }
 
  /**
@@ -78,7 +79,27 @@ public class School {
   * @param MoneyEarned money that is supposed to be added.
   */
 
- public static void updateTotalMoneyEarned(int MoneyEarned) {
+ public void updateTotalMoneyEarned(int MoneyEarned) {
   totalMoneyEarned += MoneyEarned;
+ }
+
+ /**
+  * 
+  * @return the total money spent by the school.
+  */
+
+ public int getTotalMoneySpent() {
+  return totalMoneySpent;
+ }
+
+ /**
+  * Update the money that is spent by the school which is the salary given by the
+  * school to its teachers.
+  * 
+  * @param moneySpent the money spent by school.
+  */
+
+ public void updateTotalMoneySpent(int moneySpent) {
+  totalMoneyEarned -= moneySpent;
  }
 }
