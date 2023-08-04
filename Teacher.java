@@ -2,7 +2,7 @@ public class Teacher {
 
  private int id;
  private String name;
- private int salary;
+ private static int salary;
 
  /**
   * Creates a new Teacher object.
@@ -55,9 +55,15 @@ public class Teacher {
   */
 
  public void setSalary(int salary) {
-  this.salary = salary;
+  Teacher.salary = salary;
  }
 
- public void receiveSalary(int salary2) {
+ public static void receiveSalary(int salary) {
+  School.updateTotalMoneySpent(salary);
+ }
+
+ @Override
+ public String toString() {
+  return "Teacher's name: " + name + "\nTotal salary earned so far: $" + salary;
  }
 }
