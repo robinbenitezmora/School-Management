@@ -79,7 +79,7 @@ public class School {
   * @param MoneyEarned money that is supposed to be added.
   */
 
- public void updateTotalMoneyEarned(int MoneyEarned) {
+ public static void updateTotalMoneyEarned(int MoneyEarned) {
   totalMoneyEarned += MoneyEarned;
  }
 
