@@ -119,3 +119,4 @@ This project is [MIT](./MIT.md) licensed.
 # The-Best-Calculator
 # Switch-Bulb
 # Sum-Game
+# Random-Quote-Generator
